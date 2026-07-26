@@ -717,124 +717,322 @@ footer {
 }
 
 /* ===========================
-   MOBILE
+   MOBILE VERSION
 =========================== */
 
 @media (max-width: 768px) {
 
- .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 15px;
-        gap: 10px;
-    }
 
-    .menu-toggle {
-        display: block;
-    }
+/* HEADER */
 
+.header-container {
 
-    .nav-menu {
-
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        text-align: center;
-        padding: 2px 0;
-        box-shadow: 0 5px 15px rgba(0,0,0,.15);
-
-    }
-
-    .nav-menu.active {
-
-    display: flex;
-
-    }
-
-
-   .nav-menu a {
-
-    padding: 3px;
-    font-size: 16px;
-    line-height: 1.2;
-
-    }
-
-    .logo h1 {
-        font-size: 20px;
-    }
-
-
-    .menu-toggle {
-        display: block;
-        order: 3;
-    }
-
-
-    .language {
-        display: flex;
-        order: 2;
-        gap: 6px;
-    }
-
-
-    .flag {
-        width: 24px;
-        height: 16px;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 
 }
 
-    /* Hero */
 
-    .hero-box {
-        width: 95%;
-        padding: 30px 20px;
-    }
+.logo h1 {
 
-    .hero h2 {
-        font-size: 32px;
-    }
+    font-size:20px;
 
-    /* About */
+}
 
-    .about {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
 
-    .about-image {
-        text-align: center;
-    }
+/* HAMBURGER */
 
-    /* How I Can Help */
+.menu-toggle {
 
-    .help-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
+    display:block;
+    order:3;
+    background:none;
+    border:none;
+    font-size:32px;
+    color:#556b5d;
+    cursor:pointer;
 
-    /* Contact */
+}
 
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
 
-    /* Footer */
+/* NAV MENU */
 
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
+.nav-menu {
 
-    .footer-box {
-        width: 100%;
-    }
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
 
+    background:white;
+
+    flex-direction:column;
+    align-items:center;
+
+    padding:8px 0;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+.nav-menu.active {
+
+    display:flex;
+
+}
+
+
+.nav-menu a {
+
+    padding:4px;
+    font-size:17px;
+
+}
+
+
+/* FLAGS */
+
+.language {
+
+    display:flex;
+    order:2;
+    gap:6px;
+
+}
+
+
+.flag {
+
+    width:24px;
+    height:16px;
+
+}
+
+
+
+/* HERO */
+
+.hero {
+
+    height:auto;
+    min-height:500px;
+
+}
+
+
+.hero-box {
+
+    width:95%;
+    padding:30px 20px;
+
+}
+
+
+.hero h2 {
+
+    font-size:32px;
+
+}
+
+
+.hero p {
+
+    font-size:18px;
+
+}
+
+
+
+/* ABOUT */
+
+.about {
+
+    grid-template-columns:1fr;
+    gap:40px;
+
+}
+
+
+.about-section {
+
+    padding:50px 20px;
+
+}
+
+
+.about h2 {
+
+    font-size:32px;
+
+}
+
+
+.about p {
+
+    font-size:16px;
+
+}
+
+
+.about-image {
+
+    text-align:center;
+
+}
+
+
+.about-banner {
+
+    width:70%;
+
+}
+
+
+
+/* HOW I CAN HELP */
+
+.help-container {
+
+    grid-template-columns:1fr;
+    gap:40px;
+
+}
+
+
+.help-section {
+
+    padding:50px 20px;
+
+}
+
+
+.help-content h2 {
+
+    font-size:32px;
+
+}
+
+
+.help-content p,
+.help-content li {
+
+    font-size:16px;
+
+}
+
+
+
+/* CONTACT */
+
+.contact-container {
+
+    grid-template-columns:1fr;
+    gap:40px;
+
+}
+
+
+.contact-section {
+
+    padding:50px 20px;
+
+}
+
+
+.contact-text h2 {
+
+    font-size:34px;
+
+}
+
+
+.contact-text p {
+
+    font-size:16px;
+
+}
+
+
+.contact-form {
+
+    padding:30px 20px;
+
+}
+
+
+
+/* TESTIMONIALS */
+
+.testimonials {
+
+    padding:60px 20px;
+
+}
+
+
+.testimonials h2 {
+
+    font-size:32px;
+
+}
+
+
+.testimonial {
+
+    padding:30px 20px;
+
+}
+
+
+.testimonial-text {
+
+    font-size:16px;
+
+}
+
+
+
+/* FOOTER */
+
+.footer-content {
+
+    flex-direction:column;
+    gap:30px;
+    text-align:center;
+
+}
+
+
+.footer-box {
+
+    width:100%;
+
+}
+
+
+.footer-box p,
+.footer-box li,
+.footer-box a {
+
+    font-size:13px;
+
+}
+
+
+
+/* BACK TO TOP ARROW */
+
+.back-to-top {
+
+    width:40px;
+    height:40px;
+    font-size:22px;
+
+}
+
+
+}
